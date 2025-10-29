@@ -1,0 +1,8 @@
+Here is where we will add our pip install statements.
+
+Please update this everytime you add a new library
+
+
+pip install matplotlib
+pip install biopython
+pip install PyQt6
