@@ -24,6 +24,20 @@ class Main_GUI(QMainWindow):
         help_menu = menu_bar.addMenu("Help")  # Add "Help" menu
 
 
+        # Create ability to open file and parse data
+        open_file_button = QAction("Open File", self)
+        open_file_button.setStatusTip("Open a .FASTA or .FASTQ file")
+
+        # Connect the open file action to the menu bar button
+        open_file_button.triggered.connect(self.get_file)
+        file_menu.addAction(open_file_button)
+
+
+
+    def get_file(self):
+        pass
+
+
 if __name__ == '__main__':
     app = QApplication(sys.argv) #create the application
     gui = Main_GUI() # create an instance of the main GUI
